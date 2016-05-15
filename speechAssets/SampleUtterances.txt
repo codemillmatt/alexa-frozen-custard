@@ -1,0 +1,28 @@
+FindFlavorIntent what is the flavor on {day}
+FindFlavorIntent what's the flavor on {day}
+FindFlavorIntent give me the flavor on {day}
+FindFlavorIntent what's today's flavor
+FindFlavorIntent what's the flavor of the day on {day}
+FindFlavorIntent what is the flavor of the day on {day}
+FindFlavorIntent to give me the flavor of the day on {day}
+FindFlavorIntent to gimme today's flavor of the day
+FindFlavorIntent to gimme today's flavor
+FindFlavorIntent today
+FindFlavorIntent what will the flavor be {day}
+FindFlavorIntent what will the flavor be on {day}
+FindFlavorIntent to tell me the flavor on {day}
+FindFlavorIntent to tell me the flavor of the day on {day}
+FindFlavorIntent what will the flavor be for {day}
+FindFlavorIntent to tell me the flavor for {day}
+FindFlavorIntent to tell me the flavor of the day for {day}
+FindFlavorIntent what will the flavor be for on {day}
+FindFlavorIntent {day}
+
+FindNextFlavorDateIntent when will {flavor} be served again
+FindNextFlavorDateIntent when is {flavor} up
+FindNextFlavorDateIntent {flavor}
+
+AMAZON.StopIntent thanks
+AMAZON.StopIntent done
+AMAZON.StopIntent i'm not hungry
+AMAZON.StopIntent that's enough

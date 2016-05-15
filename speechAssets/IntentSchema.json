@@ -1,0 +1,31 @@
+{
+  "intents": [
+    {
+      "intent": "FindFlavorIntent",
+      "slots": [
+        {
+          "name": "day",
+          "type": "AMAZON.DATE"
+        }
+      ]
+    },
+    {
+      "intent": "FindNextFlavorDateIntent",
+      "slots": [
+        {
+          "name": "flavor",
+          "type": "LIST_OF_FLAVORS"
+        }
+      ]
+    },    
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}
