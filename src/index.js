@@ -83,7 +83,68 @@ var allFlavors = [
 { 'date': '07-28-2016', 'flavor': 'Roca Crunch'},
 { 'date': '07-29-2016', 'flavor': 'Coffee Chocolate Chip'},
 { 'date': '07-30-2016', 'flavor': 'Mint Oreo'},
-{ 'date': '07-31-2016', 'flavor': 'Espresso'}
+{ 'date': '07-31-2016', 'flavor': 'Espresso'},
+{ 'date': '08-01-2016', 'flavor': 'Cookie Dough'},
+{ 'date': '08-02-2016', 'flavor': 'Milk Chocolate Almond'},
+{ 'date': '08-03-2016', 'flavor': 'Caramel Pecan Drizzle'},
+{ 'date': '08-04-2016', 'flavor': 'Cherry Amaretto'},
+{ 'date': '08-05-2016', 'flavor': 'Pina Colada'},
+{ 'date': '08-06-2016', 'flavor': 'Coffee Chocolate Chip'},
+{ 'date': '08-07-2016', 'flavor': 'Elephant Tracks'},
+{ 'date': '08-08-2016', 'flavor': 'Chocolate Chocolate Chip'},
+{ 'date': '08-09-2016', 'flavor': 'Managers Choice'},
+{ 'date': '08-10-2016', 'flavor': 'Death By Chocolate'},
+{ 'date': '08-11-2016', 'flavor': 'Caramel Drizzle Cake Roll'},
+{ 'date': '08-12-2016', 'flavor': 'Mint Chocolate Chip'},
+{ 'date': '08-13-2016', 'flavor': 'Coconut'},
+{ 'date': '08-14-2016', 'flavor': 'Raspberry Truffle Cheesecake'},
+{ 'date': '08-15-2016', 'flavor': 'Peanut Butter Cup'},
+{ 'date': '08-16-2016', 'flavor': 'Roca Crunch'},
+{ 'date': '08-17-2016', 'flavor': 'Bavarian Thin Mint'},
+{ 'date': '08-18-2016', 'flavor': 'Moose Tracks'},
+{ 'date': '08-19-2016', 'flavor': 'Mint Oreo'},
+{ 'date': '08-20-2016', 'flavor': 'Butter Pecan'},
+{ 'date': '08-21-2016', 'flavor': 'Strawberry'},
+{ 'date': '08-22-2016', 'flavor': 'Peanut Butter Cookie Dough'},
+{ 'date': '08-23-2016', 'flavor': 'Vanilla Chocolate Chip'},
+{ 'date': '08-24-2016', 'flavor': 'Cake Roll'},
+{ 'date': '08-25-2016', 'flavor': 'Chocolate English Toffee'},
+{ 'date': '08-26-2016', 'flavor': 'Caramel Cashew'},
+{ 'date': '08-27-2016', 'flavor': 'I love Elvis'},
+{ 'date': '08-28-2016', 'flavor': 'Brownies and Cream'},
+{ 'date': '08-29-2016', 'flavor': 'Espresso'},
+{ 'date': '08-30-2016', 'flavor': 'Blue Moon'},
+{ 'date': '08-31-2016', 'flavor': 'French Silk'},
+{ 'date': '09-01-2016', 'flavor': 'Mint Oreo and Chocolate Chocolate Chip'},
+{ 'date': '09-02-2016', 'flavor': 'Elephant Tracks'},
+{ 'date': '09-03-2016', 'flavor': 'Raspberry'},
+{ 'date': '09-04-2016', 'flavor': 'Espresso'},
+{ 'date': '09-05-2016', 'flavor': 'Managers Choice and Mint Chocolate Chip'},
+{ 'date': '09-06-2016', 'flavor': 'Caramel Cashew and Death by Chocolate'},
+{ 'date': '09-07-2016', 'flavor': 'Roca Crunch and Peanut Butter Oreo'},
+{ 'date': '09-08-2016', 'flavor': 'Cherry Amaretto and Cake Roll'},
+{ 'date': '09-09-2016', 'flavor': 'Brownies and Cream'},
+{ 'date': '09-10-2016', 'flavor': 'Badger Tracks'},
+{ 'date': '09-11-2016', 'flavor': 'Oreo'},
+{ 'date': '09-12-2016', 'flavor': 'Chocolaate Espresso Almond and Vanilla Chocolate Chip'},
+{ 'date': '09-13-2016', 'flavor': 'Butter Pecan and Peanut Butter Cookie Dough'},
+{ 'date': '09-14-2016', 'flavor': 'Bavarian Thin Mint and Brownies and Cream'},
+{ 'date': '09-15-2016', 'flavor': 'Pumpkin and Bear Claw'},
+{ 'date': '09-16-2016', 'flavor': 'Coffee Oreo'},
+{ 'date': '09-17-2016', 'flavor': 'Badger Tracks'},
+{ 'date': '09-18-2016', 'flavor': 'Chocolate Chocolate Chip'},
+{ 'date': '09-19-2016', 'flavor': 'Managers Choice and Milk Chocolate Almond'},
+{ 'date': '09-20-2016', 'flavor': 'Caramel Pecan Drizzle and Pumpkin'},
+{ 'date': '09-21-2016', 'flavor': 'Coffee Chocolate Chip and Peanut Butter Cup'},
+{ 'date': '09-22-2016', 'flavor': 'Black Forest and Oreo'},
+{ 'date': '09-23-2016', 'flavor': 'French Silk'},
+{ 'date': '09-24-2016', 'flavor': 'Cake Roll'},
+{ 'date': '09-25-2016', 'flavor': 'Cookie Dough'},
+{ 'date': '09-26-2016', 'flavor': 'Chocolate Pecan and Caramel Drizzle Cake Roll'},
+{ 'date': '09-27-2016', 'flavor': 'Caramel Cashel and Elephant Tracks'},
+{ 'date': '09-28-2016', 'flavor': 'Chocolate Peanut Butter and Brownies and Cream'},
+{ 'date': '09-29-2016', 'flavor': 'Raspberry Truffle Cheesecake and Cake Roll'},
+{ 'date': '09-30-2016', 'flavor': 'Pumpkin'}
 ];
 
 var FotD = function () {
@@ -135,7 +196,7 @@ FotD.prototype.intentHandlers = {
     
     "AMAZON.HelpIntent": function (intent, session, response) {
         var speechText = "With the Flavor of the Day Finder, just tell me the date, and I'll tell you the delicious flavor " +
-            "that Michael's is serving up. For example, you could say today, or August fifteenth. What day now honey?";
+            "that Michael's is serving up. For example, you could say today, or August fifteenth.";
             
         var repromptText = "Which day do you want?";
         var speechOutput = {
@@ -151,8 +212,8 @@ FotD.prototype.intentHandlers = {
 };
 
 function getWelcomeResponse(response) {
-  var speechText = "<p>Digging on some custard? Welcome to Michael's Flavor of the Day Finder!</p><p>What day do you want to find baby cakes?</p>";
-  var repromptText = "All you need to do is tell me the date, and I'll tell you the delicious, delicious flavor you could be eating in five minutes! Now what date sweetie?";
+  var speechText = "<p>Digging on some custard? Welcome to Michael's Flavor of the Day Finder!</p><p>What day do you want to know the flavor for?</p>";
+  var repromptText = "All you need to do is tell me the date, and I'll tell you the delicious, delicious flavor you could be eating in five minutes! Now what date do you want to know about?";
   
   var speechOutput = {
     speech: "<speak>" + speechText + "</speak>",
@@ -199,12 +260,12 @@ function handleFindNextRequest(intent, session, response) {
     var nextUp = _.find(allFlavors, function(f) { return f.flavor.toLowerCase() === theFlavor && moment(f.date, "MM-DD-YYYY").isAfter(moment().utcOffset(-5)); });
     
     if (nextUp) {            
-      response.tell(theFlavor + " will next be served on " + nextUp.date + ". Put it on the calendar, sweet cheeks!");
+      response.tell(theFlavor + " will next be served on " + nextUp.date + ". Put it on the calendar!");
     } else {
       response.tell("Darn it! My psychic abilities don't tell me when that flavor will be coming up! Why don't you just take your chances today?");
     }
   } else {
-    response.tell("Whoa! I don't even recognize that flavor! I bet it would be delicious, if it was real. Why don't you go today and try out a real flavor?");
+    response.tell("Whoa! I don't even recognize that flavor! I bet it would be delicious.");
   }
 }
 
