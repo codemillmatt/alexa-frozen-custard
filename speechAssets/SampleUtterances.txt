@@ -16,11 +16,13 @@ FindFlavorIntent what will the flavor be for {day}
 FindFlavorIntent to tell me the flavor for {day}
 FindFlavorIntent to tell me the flavor of the day for {day}
 FindFlavorIntent what will the flavor be for on {day}
-FindFlavorIntent {day}
+FindFlavorIntent what the flavor is {day}
+FindFlavorIntent what the flavor will be this {day}
 
 FindNextFlavorDateIntent when will {flavor} be served again
 FindNextFlavorDateIntent when is {flavor} up
 FindNextFlavorDateIntent {flavor}
+FindNextFlavorDateIntent when {flavor} will be served next
 
 AMAZON.StopIntent thanks
 AMAZON.StopIntent done
